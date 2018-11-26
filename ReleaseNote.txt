@@ -1,0 +1,155 @@
+V3.16
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2018/04/12          Version  : V3.16
+=========================================================================
+1.modify the  fn+fn  ,ec only send keycode 
+Label:// 2018/04/10
+	OEM_SCANTABLE.C
+
+V3.15
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2018/03/13          Version  : V3.15
+=========================================================================	
+1.modify the press twice fn+up/down  then LCD backlight change 
+Lable£º //lw 2018/03/13
+	OEM_LCD.c 
+	
+
+V3.14
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2018/03/12          Version  : V3.14
+=========================================================================	
+1.In DC mode,when in -20degree ,the heat function cannot be used.
+   the revised content to be verified
+Lable£º //lw 2018/03/02
+	OEM_HEAT.c 
+	Oem_main.c 	
+	Oem_power.c
+ 
+
+V3.13
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2018/02/27           Version  : V3.13 
+=========================================================================	
+1.In DC mode,when in -20degree ,the heat function cannot be used.
+   the revised content to be verified
+Lable£º //lw 2018/01/23
+	OEM_heat.C
+	oem_power.c
+
+2.modify the fn+f1 function
+	OEM_scantables.c
+
+3.modify the press twice fn+up/down  then LCD backlight change 
+Lable:   //lw 2018/02/02 
+	
+
+v3.12
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2017/12/20           Version  : V3.12
+=========================================================================
+1.modify the heat test code
+	increase the MAX_Heat_Time to 180
+	
+Label:<<lw 17/12/19
+Modified files:
+	OEM_heat.C 
+
+v3.11
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2017/12/18           Version  : V3.11
+=========================================================================
+1.modify the heat test code
+	through the Debug_TIME and Debug_Heating_Status,the test code can test 
+LCD1,LCD2 and GPU's heat function
+Label:<<lw 2017/12/18
+Modified files:
+	OEM_heat.C
+	OEM_MEMORY.C  
+	
+
+
+v3.10
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2017/12/08           Version  : V3.10
+=========================================================================
+1.solve the problem about that the fan test would show the last fan speed
+when the fan is out
+Label:<<lw 2017/12/8
+Modified files:
+	OEM_fan.C 
+
+
+v3.9
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2017/12/06            Version  : V3.9
+=========================================================================
+1. solve the problem about that Long press fn + up / down but the LCD don't change
+Label:<<lw 2017/12/6 
+Modified files:
+	OEM_main.C 
+		add Setup_Brightness(LCD_BRIGHTNESS) in function  Hook_Timer10msEventA()
+		
+
+ 
+V3.8
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2017/12/01            Version  : V3.8
+=========================================================================
+1. increase heat_test function
+Label:<< 2017/12/01  
+Modified files:
+	OEM_battery.C 
+	OEM_MEMORY.C 
+		0x48 -> 0xB0  
+		0x24 -> 0x8d 
+		0x25 -> 0x8e 
+		0x26 -> 0x9d  
+		0x27 -> 0x9e  
+
+
+v3.7 heat test
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2017/11/24            Version  : V3.7
+=========================================================================
+1. increase heat_test function
+Label:<< 2017/11/22 lw
+Modified files:
+	OEM_heat.C 
+		
+
+v3.7
+=========================================================================
+Project Name  : RN1503            Author   : LiWu
+CRB Code Base : IT8528v14
+Build Date    : 2017/11/20            Version  : V3.7
+=========================================================================
+1. Modify some address to apply the kylin 0818
+Label:<<lw 2017/11/20
+Modified files:
+	OEM_MEMORY.C 
+		0xB0 -> 0x48
+		0x8d -> 0x24
+		0x8e -> 0x25
+		0x9d -> 0x26
+		0x9e -> 0x27
